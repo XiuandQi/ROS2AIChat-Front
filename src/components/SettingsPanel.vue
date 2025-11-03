@@ -1,10 +1,7 @@
 <template>
     <!-- 连接设置面板 -->
-<<<<<<< HEAD
     <div ref="panelRef" class="settings-panel liquid-glass apple-radius" :class="{ 'hidden': modelValue }" :style="cssVars">
-=======
-    <div class="settings-panel liquid-glass apple-radius" :class="{ 'hidden': modelValue }">
->>>>>>> b00df60700e9409fcbd9ccddc49e89f2ddd95a5e
+
       <div class="settings-content">
         <div class="settings-header">
           <label for="ws-url">WebSocket地址</label>
@@ -29,10 +26,8 @@
 </template>
 
 <script setup>
-<<<<<<< HEAD
 import {ref,computed,watch,onMounted} from 'vue'
-=======
->>>>>>> b00df60700e9409fcbd9ccddc49e89f2ddd95a5e
+
 const props = defineProps({
   modelValue: {  // 改为使用v-model
     type: Boolean,
@@ -51,7 +46,6 @@ function handleConnect() {
   // 连接成功后可以选择自动关闭面板
   // emit('update:modelValue', false)
 }
-<<<<<<< HEAD
 
 const panelRef = ref(null);
 const targetX = ref(0);
@@ -85,6 +79,4 @@ onMounted(() => {
   window.addEventListener('resize', updateTargetPosition);
 })
 
-=======
->>>>>>> b00df60700e9409fcbd9ccddc49e89f2ddd95a5e
 </script>
