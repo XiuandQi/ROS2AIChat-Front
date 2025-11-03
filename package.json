@@ -1,0 +1,20 @@
+{
+  "name": "ros2-qa-assistant",
+  "version": "1.0.0",
+  "description": "ROS2 AI问答助手 - Vue版本",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 8080"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "roslib": "^1.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  }
+}
