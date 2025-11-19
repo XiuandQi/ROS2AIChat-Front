@@ -1,7 +1,6 @@
 <template>
     <!-- 连接设置面板 -->
     <div ref="panelRef" class="settings-panel liquid-glass apple-radius" :class="{ 'hidden': modelValue }" :style="cssVars">
-
       <div class="settings-content">
         <div class="settings-header">
           <label for="ws-url">WebSocket地址</label>
@@ -27,7 +26,6 @@
 
 <script setup>
 import {ref,computed,watch,onMounted} from 'vue'
-
 const props = defineProps({
   modelValue: {  // 改为使用v-model
     type: Boolean,

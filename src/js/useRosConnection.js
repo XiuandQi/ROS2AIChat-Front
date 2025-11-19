@@ -153,7 +153,6 @@ export function useRosConnection(wsUrl, messages, currentTypingMessage) {
         const answer = msg.data || '抱歉，我现在无法回答这个问题。'
         const message = addMessage('', 'ai', true)
         currentTypingMessage.isTyping = true
-<<<<<<< HEAD
         // messages.value.length < 10 ? setTimeout(() => {
         //   messages.value.length < 10 ? addMessage(errorgenerate(), 'ai', false, 'error') : ''
         // }, Math.random(3, 8) * 1000) 
@@ -165,19 +164,6 @@ export function useRosConnection(wsUrl, messages, currentTypingMessage) {
         // },5000);
         // typewriterEffect(message, answer, 30)
         typewriterEffect(message, answer, 30, 400)
-=======
-        messages.value.length < 10 ? setTimeout(() => {
-          messages.value.length < 10 ? addMessage(errorgenerate(), 'ai', false, 'error') : ''
-        }, Math.random(3, 8) * 1000) 
-        : 
-        setTimeout(()=>{
-          messages.value.length > 10 && messages.value.length <= 12 ? updateConnectionStatus('connected', '已连接') : "";
-          messages.value.length > 10 && messages.value.length <= 12 ? addMessage('与ROS的连接已恢复', 'ai', false) : '';
-          messages.value.length > 10 ? typewriterEffect(message, answer, 30, 400) : '';
-        },2000);
-        // typewriterEffect(message, answer, 30)
-        // typewriterEffect(message, answer, 30, 400)
->>>>>>> b00df60700e9409fcbd9ccddc49e89f2ddd95a5e
       })
 
       // 发送待处理的消息
